@@ -5,7 +5,7 @@ from datetime import datetime
 from PIL import Image, ImageDraw
 import cv2
 import telebot
-token = "7054682255:AAGq4gob8anXKGaKjhaZlrBThMvQnQA3cyI"
+token = ""
      #Calendar
 now = datetime.now()
 formatted_date = now.strftime("%d, %m, %Y")  # правильно форматируем строку даты
@@ -46,9 +46,9 @@ while True:
             # Находим поля для ввода логина и пароля и вводим данные
             username = driver.find_element(By.CSS_SELECTOR,
                                            "#formLogin > div.Auth_Fields__en5Sv > div:nth-child(1) > div > input")
-            username.send_keys('sharipovdi-6')
+            username.send_keys('')
             password = driver.find_element(By.CSS_SELECTOR, "#formLogin > div.Auth_Fields__en5Sv > div:nth-child(2) > div > input")
-            password.send_keys('iSUjvP2d')
+            password.send_keys('')
 
             # Нажимаем кнопку "Войти"
             login_button = driver.find_element(By.CSS_SELECTOR, '#formLogin > div:nth-child(4) > button')
